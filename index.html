@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind & DaisyUI Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,800;1,800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Customized color  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'common': '#B68C5A'
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .poppins{
+            font-family: "Poppins", serif;
+        }
+        .garamond{
+            font-family: "EB Garamond", serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar  -->
+        <section class="container mx-auto mt-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Cases</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <img src="images/logo2.png" alt="" class="w-[158px]" >
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Cases</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn poppins text-white bg-common w-52">Free Consultation</button>
+                </div>
+              </div>
+        </section>
+        <!-- Banner Section  -->
+      <section class="container mx-auto mt-12">
+        <div
+        class="hero lg:p-24 rounded-md bg-gradient-to-r from-[#111111] ..."
+        style="background-image: url(images/banner.png);">
+        <div class="text-center">
+          <div>
+            <h1 class="mb-5 garamond text-7xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
+            <p class="mb-5 poppins text-white">
+                There are many variations of passages of Lorem Ipsum available, 
+                but the majority <br> have suffered alteration in some form, by injected humour.
+            </p>
+            <input class="bg-white w-[500px] h-16 pl-8 rounded-lg poppins" type="text" value="Search your services ">
+            <button class="btn bg-common w-40 h-16 text-white poppins border-none">Get Started</button>
+          </div>
+        </div>
+      </div>
+      </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
